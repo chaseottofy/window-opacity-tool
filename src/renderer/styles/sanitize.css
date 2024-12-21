@@ -1,0 +1,93 @@
+h1,
+h2,
+h3,
+h4 {
+  font-size: inherit;
+  font-weight: inherit
+}
+
+h1,
+h2,
+h3,
+h4,
+nav,
+ul,
+main,
+header,
+button,
+input,
+select,
+textarea,
+a,
+p,
+li,
+div,
+span,
+label,
+strong,
+small,
+b {
+  font-family: var(--primaryFont);
+}
+
+input,
+button {
+  transition-property: color, background-color, border-color;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-duration: .15s;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+select,
+input:not([type="checkbox"]) {
+  border-radius: var(--br2);
+  border: var(--border1);
+  outline: 1.5px solid transparent;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+label:focus-visible,
+textarea:focus-visible {
+  outline: 1.5px solid rgb(255 255 255 / .5);
+}
+
+a:active,
+button:active,
+input:active,
+label:active {
+  filter: brightness(1.2);
+}
+
+button:hover {
+  background-color: var(--offset-black2);
+}
+
+button:disabled {
+  opacity: .6;
+}
+
+input::placeholder {
+  color: var(--grey4);
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0
+}
+
+svg {
+  fill: var(--white1) !important;
+  pointer-events: none;
+  user-select: none;
+}
+
+img {
+  filter: invert(1);
+}

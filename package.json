@@ -1,0 +1,39 @@
+{
+  "name": "window-opacity-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/main/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "stylelint:fix": "stylelint \"src/**/*.css\" --fix",
+    "stylelint": "stylelint \"src/**/*.css\"",
+    "lint:fix": "eslint \"**/*.js\" --fix",
+    "lint": "eslint \"**/*.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8",
+    "electron-rebuild": "^3.2.9",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-promise": "^7.2.1",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-sort-class-members": "^1.21.0",
+    "eslint-plugin-unicorn": "^56.0.1",
+    "stylelint": "^16.12.0",
+    "stylelint-config-idiomatic-order": "^10.0.0",
+    "stylelint-config-recommended": "^14.0.1",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-high-performance-animation": "^1.10.0",
+    "stylelint-order": "^6.0.4"
+  },
+  "dependencies": {
+    "@lwahonen/ffi-napi": "^4.0.12"
+  }
+}
